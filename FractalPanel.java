@@ -144,9 +144,6 @@ public class FractalPanel extends JPanel implements MouseListener, KeyListener{
             Point destination = getMousePosition();
             Complex panTopLeft = view.translate((int) (destination.getX() - (width / 2)), (int) (destination.getY() - (height / 2)));
             Complex panBotRight = view.translate((int) (destination.getX() + (width / 2)), (int) (destination.getY() + (width / 2)));
-            System.out.println("Destination: " + view.translate((int)destination.getX(), (int)destination.getY()));
-            System.out.println("Top Left: " + panTopLeft);
-            System.out.println("Bottom Right: " + panBotRight);
             view.setComplexCorners(panTopLeft, panBotRight);
             paint(getGraphics());
         }
