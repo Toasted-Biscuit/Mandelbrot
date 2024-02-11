@@ -1,1 +1,1 @@
-// This folder is where the images from the image sequence are stored
+This folder is where the images from the image sequence are stored
